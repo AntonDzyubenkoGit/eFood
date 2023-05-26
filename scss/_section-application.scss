@@ -1,0 +1,51 @@
+.application {
+  margin-top: rem(165);
+
+  @media (max-width: ($tablet + px)) {
+    margin-top: rem(60);
+  }
+
+  // .application__container
+  &__container {
+    display: grid;
+    grid-template-columns: rem(540) auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: rem(10);
+
+    @media (max-width: ($tablet + px)) {
+      grid-template-columns: 1fr;
+      row-gap: rem(10);
+    }
+  }
+
+  // .application__content
+  &__content {
+  }
+
+  // .application__title
+  &__title {
+  }
+
+  // .application__text
+  &__text {
+    margin-top: rem(30);
+    line-height: math.div(30, 20);
+  }
+
+  // .application__store
+  &__store {
+    margin-top: rem(30);
+    display: inline-flex;
+    column-gap: rem(35);
+  }
+
+  // .application__image
+  &__image {
+    @media (max-width: ($tablet + px)) {
+      margin-top: rem(30);
+      text-align: center;
+    }
+  }
+}

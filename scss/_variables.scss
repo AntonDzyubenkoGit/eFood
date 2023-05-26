@@ -1,0 +1,32 @@
+// Основные шрифты
+$fontMain: "Rubik";
+$fontFooter: "DM Sans";
+$fontQuotes: "Nunito";
+
+// Основной размер шрифта
+$fontSize: rem(20); // 20(рх) - размер по умолчанию из макета
+$fontSizeMobile: rem(16);
+
+// Основные цвета
+$primaryColor: #363853;
+$secondaryColor: #ff7a50;
+$footerColor: #37383d;
+$copyColor: #646464;
+$whiteColor: #fff;
+$borderColor: #bbbbbb;
+$bgColor: linear-gradient(180deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.38) 100%);
+
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1440;
+// Ширина ограничивающего контейнера
+$maxWidthContainer: 1170;
+// Общий отступ у контейнера (30 = по 15рх с каждой стороны)
+$containerPadding: 15;
+
+// Брейк-поинты
+$pc: 1440; // ПК, ноутбуки, горизонтальные планшеты
+$tablet: 992; // Планшеты, горизонтальные телефоны
+$mobile: 768; // Телефоны L
+$mobileSmall: 480; // Телефоны S

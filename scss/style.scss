@@ -1,0 +1,54 @@
+@use "sass:math";
+@import "./reset";
+@import "./fonts";
+@import "./mixins";
+@import "./variables";
+@import "./btn";
+@import "./title";
+@import "./header";
+@import "./section-delivery-food";
+@import "./section-category";
+@import "./section-stay-home";
+@import "./section-top-food";
+@import "./section-application";
+@import "./section-feedback";
+@import "./section-subscribe";
+@import "./footer";
+
+body {
+  font-family: $fontMain;
+  font-size: $fontSize;
+  color: $primaryColor;
+  background-color: $bgColor;
+  line-height: math.div(21, 18);
+  font-weight: 400;
+
+  @media (max-width: ($tablet + px)) {
+    font-size: $fontSizeMobile;
+  }
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: $primaryColor;
+}
+
+[class*="__container"] {
+  max-width: rem($maxWidthContainer);
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 $containerPadding + px;
+}
+
+.none {
+  display: none;
+}
+
+hr {
+  display: block;
+  height: rem(1);
+  border-top: rem(1) solid #969696;
+}

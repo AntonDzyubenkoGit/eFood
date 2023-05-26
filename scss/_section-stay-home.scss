@@ -1,0 +1,143 @@
+.stay-home {
+  margin-top: rem(87);
+
+  @media (max-width: ($tablet + px)) {
+    margin-top: rem(45);
+  }
+
+  // .stay-home__container
+  &__container {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: ($tablet + px)) {
+      grid-template-columns: 1fr;
+      row-gap: rem(10);
+    }
+  }
+
+  // .stay-home__image
+  &__image {
+    @media (max-width: ($tablet + px)) {
+      order: 2;
+      text-align: center;
+    }
+  }
+
+  // .stay-home__content
+  &__content {
+  }
+
+  // .stay-home__title
+  &__title {
+  }
+
+  // .stay-home__text
+  &__text {
+    margin-top: rem(30);
+    line-height: math.div(30, 20);
+  }
+
+  // .stay-home__list
+  &__list {
+    margin-top: rem(14);
+    font-size: rem(24);
+    line-height: math.div(30, 24);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+
+    @media (max-width: ($tablet + px)) {
+      font-size: rem(20);
+    }
+  }
+
+  // .stay-home__item
+  &__item {
+    position: relative;
+    padding-left: rem(50);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: rem(25);
+      height: rem(25);
+      border-radius: 50%;
+      top: 0;
+      left: rem(14);
+    }
+
+    &:nth-child(1)::before {
+      background: linear-gradient(90.26deg, #f99462 0.21%, rgba(249, 148, 98, 0.65) 97.38%);
+      opacity: 0.35;
+    }
+
+    &:nth-child(2)::before {
+      background: linear-gradient(90.26deg, #47c2ff 0.21%, #63cbfe 97.38%);
+      opacity: 0.15;
+    }
+
+    &:nth-child(3)::before {
+      background: linear-gradient(90.26deg, #ff7070 0.21%, rgba(255, 112, 112, 0.65) 97.38%);
+      opacity: 0.15;
+    }
+
+    span {
+      &::before {
+        content: "";
+        position: absolute;
+
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(1) {
+      span {
+        &::before {
+          top: 0;
+          left: rem(-1);
+          width: rem(34);
+          height: rem(34);
+          background-image: url(./../images/stayHome/timer.svg);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      span {
+        &::before {
+          top: rem(5);
+          left: rem(5);
+          width: rem(30);
+          height: rem(30);
+          background-image: url(./../images/stayHome/men.svg);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      span {
+        &::before {
+          top: rem(8);
+          left: rem(5);
+          width: rem(28);
+          height: rem(28);
+          background-image: url(./../images/stayHome/resturent.svg);
+        }
+      }
+    }
+  }
+
+  // .stay-home__btn
+  &__btn {
+    display: inline-block;
+    margin-top: rem(50);
+    padding: 14px 44px;
+
+    box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
+    border-radius: 30px 30px 1px 30px;
+  }
+}

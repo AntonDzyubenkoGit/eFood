@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>EFood</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <!-- Меню сайта -->
+        <div class="header__sitebar">
+          <div class="header__logo"><span>E</span>Food</div>
+          <nav class="header__nav" data-nav>
+            <a href="#" class="header__link">Home</a>
+            <a href="#" class="header__link">Service</a>
+            <a href="#" class="header__link">Top cities</a>
+            <a href="#" class="header__link">Contract</a>
+          </nav>
+          <div class="header__actions">
+            <div class="header__search">
+              <label for="search" class="header__search-label" data-label><img src="./images/header/search.svg" alt="search icon" /></label>
+              <input id="search" type="text" class="header__search-input" placeholder="searching..." data-search hidden />
+            </div>
+            <a href="#" class="header__cart">
+              <img src="./images/header/cart.svg" alt="cart icon" />
+              <span data-counter>1</span>
+            </a>
+            <a href="#" class="header__subscribe-btn btn" data-sign>Sign Up</a>
+          </div>
+          <button type="button" class="icon-menu" data-menu>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Секция презентация услуг доставки  -->
+      <section class="delivery-food">
+        <div class="delivery-food__container">
+          <div class="delivery-food__content">
+            <h1 class="delivery-food__title">Super fast <span>food delivery</span> service</h1>
+            <p class="delivery-food__text">We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%</p>
+            <p class="delivery-food__text">We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%</p>
+            <div class="delivery-food__actions">
+              <a href="#" class="delivery-food__btn btn">Explore Food</a>
+              <a href="#" class="delivery-food__app">Download App</a>
+            </div>
+          </div>
+          <div class="delivery-food__image">
+            <img src="./images/header/01.png" alt="cartoon image about delivery" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция популярных категорий  -->
+      <section class="category">
+        <div class="category__container">
+          <h2 class="category__title title">Our popular <span>Category</span></h2>
+          <div class="category__tabs tabs">
+            <nav class="tabs__items">
+              <button class="tabs__item _active" data-tabs="1">
+                <img src="./images/category/burger.svg" alt="burger icon" />
+                <span>Burger</span>
+              </button>
+              <button class="tabs__item" data-tabs="2">
+                <img src="./images/category/pizza.svg" alt="pizza icon" />
+                <span>tPizza</span>
+              </button>
+              <button class="tabs__item" data-tabs="3">
+                <img src="./images/category/sandwich.svg" alt="sandwich icon" />
+                <span>sandwich</span>
+              </button>
+              <button class="tabs__item" data-tabs="4">
+                <img src="./images/category/asian.svg" alt="asian food icon" />
+                <span>Asian Food</span>
+              </button>
+              <button class="tabs__item" data-tabs="5">
+                <img src="./images/category/dish.svg" alt="set menu icon" />
+                <span>Set Menu</span>
+              </button>
+            </nav>
+            <div class="tabs__content">
+              <!-- Слайдер 1-->
+              <div class="tabs__slider swiper _active" data-slider="1">
+                <div class="tabs__slider-wrapper swiper-wrapper">
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Black Gambugrer</p>
+                    <p class="tabs__slider-price">$14.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="tabs__slider-navigation">
+                  <!-- Пагинация -->
+                  <div class="tabs__slider-pagination"></div>
+                  <!-- Кнопки управления -->
+                  <div class="tabs__slider-arrow tabs__slider-arrow-prev"><img src="./images/category/burgers/arrow_prev.svg" alt="" /></div>
+                  <div class="tabs__slider-arrow tabs__slider-arrow-next"><img src="./images/category/burgers/arrow_next.svg" alt="" /></div>
+                </div>
+              </div>
+
+              <!-- Слайдер 2-->
+              <div class="tabs__slider swiper" data-slider="2">
+                <div class="tabs__slider-wrapper swiper-wrapper">
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/1.jpg" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Black Gambugrer</p>
+                    <p class="tabs__slider-price">$14.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="tabs__slider-navigation">
+                  <!-- Пагинация -->
+                  <div class="tabs__slider-pagination"></div>
+                  <!-- Кнопки управления -->
+                  <div class="tabs__slider-arrow tabs__slider-arrow-prev"><img src="./images/category/burgers/arrow_prev.svg" alt="" /></div>
+                  <div class="tabs__slider-arrow tabs__slider-arrow-next"><img src="./images/category/burgers/arrow_next.svg" alt="" /></div>
+                </div>
+              </div>
+              <!-- Слайдер 3-->
+              <div class="tabs__slider swiper" data-slider="3">
+                <div class="tabs__slider-wrapper swiper-wrapper">
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/2.jpg" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Black Gambugrer</p>
+                    <p class="tabs__slider-price">$14.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="tabs__slider-navigation">
+                  <!-- Пагинация -->
+                  <div class="tabs__slider-pagination"></div>
+                  <!-- Кнопки управления -->
+                  <div class="tabs__slider-arrow tabs__slider-arrow-prev"><img src="./images/category/burgers/arrow_prev.svg" alt="" /></div>
+                  <div class="tabs__slider-arrow tabs__slider-arrow-next"><img src="./images/category/burgers/arrow_next.svg" alt="" /></div>
+                </div>
+              </div>
+              <!-- Слайдер 4-->
+              <div class="tabs__slider swiper" data-slider="4">
+                <div class="tabs__slider-wrapper swiper-wrapper">
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/3.jpg" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Black Gambugrer</p>
+                    <p class="tabs__slider-price">$14.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="tabs__slider-navigation">
+                  <!-- Пагинация -->
+                  <div class="tabs__slider-pagination"></div>
+                  <!-- Кнопки управления -->
+                  <div class="tabs__slider-arrow tabs__slider-arrow-prev"><img src="./images/category/burgers/arrow_prev.svg" alt="" /></div>
+                  <div class="tabs__slider-arrow tabs__slider-arrow-next"><img src="./images/category/burgers/arrow_next.svg" alt="" /></div>
+                </div>
+              </div>
+              <!-- Слайдер 5-->
+              <div class="tabs__slider swiper" data-slider="5">
+                <div class="tabs__slider-wrapper swiper-wrapper">
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/4.jpg" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Cheeseburger With Salad</p>
+                    <p class="tabs__slider-price">$18.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Beef Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Royel Cheeseburger</p>
+                    <p class="tabs__slider-price">$16.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Black Gambugrer</p>
+                    <p class="tabs__slider-price">$14.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                  <div class="tabs__slider-slide swiper-slide">
+                    <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
+                    <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
+                    <p class="tabs__slider-description">Chicken Burger</p>
+                    <p class="tabs__slider-price">$15.00</p>
+                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="tabs__slider-navigation">
+                  <!-- Пагинация -->
+                  <div class="tabs__slider-pagination"></div>
+                  <!-- Кнопки управления -->
+                  <div class="tabs__slider-arrow tabs__slider-arrow-prev"><img src="./images/category/burgers/arrow_prev.svg" alt="" /></div>
+                  <div class="tabs__slider-arrow tabs__slider-arrow-next"><img src="./images/category/burgers/arrow_next.svg" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Оставайтесь дома"  -->
+      <section class="stay-home">
+        <div class="stay-home__container">
+          <div class="stay-home__image">
+            <img src="./images/stayHome/01.png" alt="cartoon image of dilivery" />
+          </div>
+          <div class="stay-home__content">
+            <h2 class="stay-home__title title"><span>Stay</span> at home, we will Provide <span>good food</span></h2>
+            <p class="stay-home__text">
+              We provide tasty food and superfast delivery at your home. Let’s use our services right now and get discounts of up to 50%.
+            </p>
+            <ul class="stay-home__list">
+              <li class="stay-home__item"><span> fasted delivery in 30 Minutes </span></li>
+              <li class="stay-home__item"><span>300+ delivery men </span></li>
+              <li class="stay-home__item"><span>500+ restaurant & cafe shop</span></li>
+            </ul>
+            <a href="#" class="stay-home__btn btn">See more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Лучшая ресторанная еда"  -->
+      <section class="top-food">
+        <div class="top-food__container">
+          <h2 class="top-food__title title">Top Food <span>restaurant</span></h2>
+          <div class="top-food__row">
+            <div class="top-food__card card-food">
+              <div class="card-food__img">
+                <img src="./images/topFood/01.jpg" alt="Restaurant Blaze Pizza" />
+              </div>
+              <p class="card-food__restaurant">Blaze Pizza</p>
+              <div class="card-food__info">
+                <p class="card-food__work-time">11.00 AM - 10.00 PM</p>
+                <a href="#" class="card-food__link btn">
+                  <img src="./images/topFood/arrow.svg" alt="arrow icon" />
+                </a>
+              </div>
+            </div>
+            <div class="top-food__card card-food">
+              <div class="card-food__img">
+                <img src="./images/topFood/02.jpg" alt="Restaurant Pizza Ranch" />
+              </div>
+              <p class="card-food__restaurant">Pizza Ranch</p>
+              <div class="card-food__info">
+                <p class="card-food__work-time">09.00 AM - 10.00 PM</p>
+                <a href="#" class="card-food__link btn">
+                  <img src="./images/topFood/arrow.svg" alt="arrow icon" />
+                </a>
+              </div>
+            </div>
+            <div class="top-food__card card-food">
+              <div class="card-food__img">
+                <img src="./images/topFood/03.jpg" alt="Restaurant 	Dion’s Pizza Hut" />
+              </div>
+              <p class="card-food__restaurant">Dion’s Pizza Hut</p>
+              <div class="card-food__info">
+                <p class="card-food__work-time">10.00 AM - 12.00 PM</p>
+                <a href="#" class="card-food__link btn">
+                  <img src="./images/topFood/arrow.svg" alt="arrow icon" />
+                </a>
+              </div>
+            </div>
+            <div class="top-food__card card-food">
+              <div class="card-food__img">
+                <img src="./images/topFood/04.jpg" alt="Restaurant 	Royel Burger" />
+              </div>
+              <p class="card-food__restaurant">Royel Burger</p>
+              <div class="card-food__info">
+                <p class="card-food__work-time">11.00 AM - 10.00 PM</p>
+                <a href="#" class="card-food__link btn">
+                  <img src="./images/topFood/arrow.svg" alt="arrow icon" />
+                </a>
+              </div>
+            </div>
+            <div class="top-food__card card-food">
+              <div class="card-food__img">
+                <img src="./images/topFood/05.jpg" alt="KFC Restaurant" />
+              </div>
+              <p class="card-food__restaurant">KFC Restaurant</p>
+              <div class="card-food__info">
+                <p class="card-food__work-time">09.00 AM - 10.00 PM</p>
+                <a href="#" class="card-food__link btn">
+                  <img src="./images/topFood/arrow.svg" alt="arrow icon" />
+                </a>
+              </div>
+            </div>
+            <div class="top-food__card card-food">
+              <div class="card-food__img">
+                <img src="./images/topFood/06.jpg" alt="Restaurant Star Food" />
+              </div>
+              <p class="card-food__restaurant">Star Food</p>
+              <div class="card-food__info">
+                <p class="card-food__work-time">10.00 AM - 12.00 PM</p>
+                <a href="#" class="card-food__link btn">
+                  <img src="./images/topFood/arrow.svg" alt="arrow icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Скачай мобильное приложение"  -->
+      <section class="application">
+        <div class="application__container">
+          <div class="application__content">
+            <h2 class="application__title title">Download Our <span>Mobile App</span></h2>
+            <p class="application__text">
+              It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead,
+              download app and get 50% discount
+            </p>
+            <div class="application__store">
+              <a href="#">
+                <img src="./images/application/AppStore.svg" alt="AppStore icon" />
+              </a>
+              <a href="">
+                <img src="./images/application/GooglePlay.svg" alt="GooglePlay icon" />
+              </a>
+            </div>
+          </div>
+          <div class="application__image">
+            <img src="./images/application/01.png" alt="application image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Отзывов"  -->
+      <section class="feedback">
+        <div class="feedback__container">
+          <h2 class="feedback__title title">What Our Client Are <span>Saying</span></h2>
+          <div class="feedback__content">
+            <div class="feedback__image">
+              <img src="./images/feedback/01.png" alt="" />
+            </div>
+            <div class="feedback__slider swiper">
+              <div class="feedback__slider-wrapper swiper-wrapper">
+                <div class="feedback__slider-slide swiper-slide">
+                  <blockquote class="feedback__quote">
+                    <p>
+                      EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use,
+                      enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now I never had to guide
+                      them to my address for delivery;
+                    </p>
+                    <cite>
+                      Anglina Jole
+                      <span>Food lover</span>
+                    </cite>
+                  </blockquote>
+                </div>
+
+                <div class="feedback__slider-slide swiper-slide">
+                  <blockquote class="feedback__quote">
+                    <p>
+                      I like to eat, you know...yes, so that it is more satisfying...tastier...the main thing is that the food does not run very fast,
+                      otherwise I'm too lazy....
+                    </p>
+                    <cite>
+                      Hungry Wolf
+                      <span>Food finder</span>
+                    </cite>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="feedback__slider-navigation">
+                <!-- Кнопки управления -->
+                <div class="feedback__slider-arrow feedback__slider-arrow-prev">
+                  <img src="./images/feedback/arrow_prev.svg" alt="prev arrow" />
+                </div>
+                <div class="feedback__slider-arrow feedback__slider-arrow-next">
+                  <img src="./images/feedback/arrow_next.svg" alt="next arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Подиска"  -->
+      <section class="subscribe">
+        <div class="subscribe__container">
+          <div class="subscribe__wrapper">
+            <h3 class="subscribe__title">Subscribe to get the Latest Offer</h3>
+            <p class="subscribe__action">Get our daily updates by subscribing to our newspaper, please drop your email below</p>
+            <form action="" class="subscribe__form" autocomplete="off">
+              <input type="email" class="subscribe__input" placeholder="Enter your email addres" />
+              <button type="submit" class="subscribe__btn btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top top-footer">
+        <div class="top-footer__container">
+          <ul class="top-footer__items">
+            <li class="top-footer__logo"><span>E</span>Food</li>
+            <li class="top-footer__item top-footer__item-contact location">
+              <a href="#" class="top-footer__item-link"> Dhaka, Bangladesh </a>
+            </li>
+            <li class="top-footer__item top-footer__item-contact phone">
+              <a href="tel:0943833399" class="top-footer__item-link">0943833399</a>
+            </li>
+            <li class="top-footer__item top-footer__item-contact mail">
+              <a href="mailto:support@efood.com" class="top-footer__item-link">support@efood.com</a>
+            </li>
+            <li class="top-footer__item top-footer__item-social">
+              <a href="#">
+                <img src="./images/footer/facebook.svg" alt="facebook icon" />
+              </a>
+              <a href="#">
+                <img src="./images/footer/twitter.svg" alt="twitter icon" />
+              </a>
+              <a href="#">
+                <img src="./images/footer/instagram.svg" alt="instagram icon" />
+              </a>
+              <a href="#">
+                <img src="./images/footer/pinterest.svg" alt="pinterest icon" />
+              </a>
+            </li>
+          </ul>
+
+          <ul class="top-footer__items">
+            <li class="top-footer__item top-footer__item-head">Service</li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">How it works</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Home delivery</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Products</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Menu</a>
+            </li>
+          </ul>
+
+          <ul class="top-footer__items">
+            <li class="top-footer__item top-footer__item-head">Company</li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">About Us</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">News</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Our trusted partner</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">New users FAQ</a>
+            </li>
+          </ul>
+
+          <ul class="top-footer__items">
+            <li class="top-footer__item top-footer__item-head">Supports</li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Help center </a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Feedbcak</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Contact us</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Terms conditins</a>
+            </li>
+          </ul>
+
+          <ul class="top-footer__items">
+            <li class="top-footer__item top-footer__item-head">Resources</li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Download app </a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Blog</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">What’s new</a>
+            </li>
+            <li class="top-footer__item">
+              <a href="#" class="top-footer__item-link">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__basement">
+        <div class="footer__container">
+          <p class="footer__copyright">© 2021 EFood - All rights reserved.</p>
+          <div class="footer__rules">
+            <a href="#" class="footer__rule-link">Privacy </a>
+            <a href="#" class="footer__rule-link">Security</a>
+            <a href="#" class="footer__rule-link">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

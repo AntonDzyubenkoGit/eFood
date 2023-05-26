@@ -1,0 +1,119 @@
+.top-food {
+  margin-top: rem(128);
+
+  @media (max-width: ($tablet + px)) {
+    margin-top: rem(60);
+  }
+
+  // .top-food__container
+  &__container {
+  }
+
+  // .top-food__title
+  &__title {
+    text-align: center;
+  }
+
+  // .top-food__row
+  &__row {
+    margin-top: rem(50);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: rem(43);
+
+    @media (max-width: ($tablet + px)) {
+      margin-top: rem(25);
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(20);
+    }
+
+    @media (max-width: ($mobile + px)) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .top-food__card
+  &__card {
+    padding-bottom: rem(22);
+  }
+}
+
+.card-food {
+  // .card-food__img
+  &__img {
+    @media (max-width: ($tablet + px)) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // .card-food__restaurant
+  &__restaurant {
+    margin-top: rem(22);
+    padding-left: rem(20);
+
+    font-size: rem(24);
+    line-height: math.div(30, 24);
+
+    @media (max-width: ($tablet + px)) {
+      font-size: rem(20);
+      padding-left: 0;
+    }
+  }
+
+  // .card-food__info
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 rem(40) 0 rem(20);
+    margin-top: rem(14);
+
+    font-size: rem(18);
+    line-height: math.div(30, 18);
+    font-weight: 300;
+
+    @media (max-width: ($tablet + px)) {
+      padding: 0;
+    }
+  }
+
+  // .card-food__work-time
+  &__work-time {
+    padding: 0 rem(10) 0 rem(30);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: rem(22);
+      height: rem(22);
+      top: rem(4);
+      left: 0;
+      background-image: url(./../images/topFood/timer.svg);
+    }
+
+    @media (max-width: ($tablet + px)) {
+      font-size: rem(16);
+
+      &::before {
+        top: rem(2);
+      }
+    }
+  }
+
+  // .card-food__link
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px 20px 0px 20px;
+
+    padding: rem(10) rem(32);
+  }
+}
