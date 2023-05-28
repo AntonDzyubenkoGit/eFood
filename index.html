@@ -25,12 +25,17 @@
               <label for="search" class="header__search-label" data-label><img src="./images/header/search.svg" alt="search icon" /></label>
               <input id="search" type="text" class="header__search-input" placeholder="searching..." data-search hidden />
             </div>
-            <a href="#" class="header__cart">
+            <a href="#" class="header__cart" data-cart>
               <img src="./images/header/cart.svg" alt="cart icon" />
-              <span data-counter>1</span>
+              <span data-counter>0</span>
             </a>
             <a href="#" class="header__subscribe-btn btn" data-sign>Sign Up</a>
           </div>
+          <div class="cart none">
+            <div class="cart-wrapper"></div>
+            <p class="cart-total">Total price: $00.00</p>
+          </div>
+
           <button type="button" class="icon-menu" data-menu>
             <span></span>
             <span></span>
@@ -95,56 +100,56 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="1">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="2">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="3">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Black Gambugrer</p>
                     <p class="tabs__slider-price">$14.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="4">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="5">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="6">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="7">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="8">Add to Cart</button>
                   </div>
                 </div>
                 <div class="tabs__slider-navigation">
@@ -164,56 +169,56 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="9">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="10">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="11">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Black Gambugrer</p>
                     <p class="tabs__slider-price">$14.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="12">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="13">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="14">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="15">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="16">Add to Cart</button>
                   </div>
                 </div>
                 <div class="tabs__slider-navigation">
@@ -232,56 +237,56 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="17">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="18">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="19">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Black Gambugrer</p>
                     <p class="tabs__slider-price">$14.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="20">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="21">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="22">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="23">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="24">Add to Cart</button>
                   </div>
                 </div>
                 <div class="tabs__slider-navigation">
@@ -300,35 +305,35 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="25">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="26">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="27">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Black Gambugrer</p>
                     <p class="tabs__slider-price">$14.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="28">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="29">Add to Cart</button>
                   </div>
 
                   <div class="tabs__slider-slide swiper-slide">
@@ -336,21 +341,21 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="30">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="31">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="32">Add to Cart</button>
                   </div>
                 </div>
                 <div class="tabs__slider-navigation">
@@ -369,35 +374,35 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Cheeseburger With Salad</p>
                     <p class="tabs__slider-price">$18.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="33">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/02.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_not_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Beef Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="34">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Royel Cheeseburger</p>
                     <p class="tabs__slider-price">$16.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="35">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/04.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Black Gambugrer</p>
                     <p class="tabs__slider-price">$14.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="36">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/05.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="37">Add to Cart</button>
                   </div>
 
                   <div class="tabs__slider-slide swiper-slide">
@@ -405,21 +410,21 @@
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="38">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/03.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="39">Add to Cart</button>
                   </div>
                   <div class="tabs__slider-slide swiper-slide">
                     <img src="./images/category/burgers/01.png" alt="burger image" class="tabs__slider-img" />
                     <img src="./images/category/burgers/stars_full.png" alt="stars icon" class="tabs__slider-stars" />
                     <p class="tabs__slider-description">Chicken Burger</p>
                     <p class="tabs__slider-price">$15.00</p>
-                    <button class="tabs__slider-btn btn">Add to Cart</button>
+                    <button class="tabs__slider-btn btn" data-addToCart="40">Add to Cart</button>
                   </div>
                 </div>
                 <div class="tabs__slider-navigation">

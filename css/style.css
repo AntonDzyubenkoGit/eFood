@@ -162,6 +162,7 @@ legend {
   -webkit-column-gap: 0.625rem;
      -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
+  position: relative;
 }
 .header__logo {
   -webkit-box-flex: 0;
@@ -389,6 +390,55 @@ legend {
   }
 }
 
+.cart {
+  position: absolute;
+  z-index: 10;
+  top: 3.75rem;
+  right: 0.625rem;
+  max-width: 18.75rem;
+  background: #e0ff84;
+}
+
+.cart-total {
+  font-size: 1.125rem;
+  padding: 0.625rem;
+}
+
+.cart-product {
+  padding: 0.625rem;
+  border-bottom: 0.0625rem solid #bbbbbb;
+}
+
+.product-cart__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+}
+.product-cart__image {
+  width: 3.125rem;
+}
+.product-cart__remove {
+  color: tomato;
+}
+.product-cart__amount {
+  margin-top: 0.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+}
 .delivery-food {
   margin-top: 4.8125rem;
 }
@@ -600,7 +650,7 @@ legend {
 }
 .tabs__slider-slide {
   display: grid;
-  grid-template-rows: 1fr auto 1.25rem repeat(2, auto);
+  grid-template-rows: 1fr auto 2.5rem repeat(2, auto);
   text-align: center;
   background: #fff;
   border-radius: 0.75rem;

@@ -1,4 +1,5 @@
 import "./script.js";
+import "./cart.js";
 
 //Инициализация Swiper
 if (document.querySelector(".tabs__slider")) {

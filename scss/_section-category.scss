@@ -106,7 +106,7 @@
   // .tabs__slider-slide
   &__slider-slide {
     display: grid;
-    grid-template-rows: 1fr auto rem(20) repeat(2, auto);
+    grid-template-rows: 1fr auto rem(40) repeat(2, auto);
     text-align: center;
 
     background: $whiteColor;
