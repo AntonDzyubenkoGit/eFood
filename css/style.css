@@ -271,6 +271,33 @@ legend {
 .header__search {
   position: relative;
 }
+.header__search-link {
+  position: absolute;
+  z-index: 10;
+  top: 4.375rem;
+  left: 0;
+  -webkit-transform: translate(-35%, 0);
+      -ms-transform: translate(-35%, 0);
+          transform: translate(-35%, 0);
+  width: 9.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.4375rem;
+  background: #e0ff84;
+  font-size: 0.75rem;
+}
+.header__search-link a {
+  border-bottom: 0.0625rem solid #bbbbbb;
+  padding: 0.625rem;
+}
 .header__search-input {
   position: absolute;
   top: 1.875rem;

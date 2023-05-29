@@ -99,6 +99,31 @@
   &__search-label {
   }
 
+  // .header__search-link
+  &__search-link {
+    position: absolute;
+    z-index: 10;
+    top: rem(70);
+    left: 0;
+    transform: translate(-35%, 0);
+
+    width: rem(150);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(7);
+
+    background: #e0ff84;
+
+    font-size: rem(12);
+
+    a {
+      border-bottom: rem(1) solid $borderColor;
+      padding: rem(10);
+    }
+  }
+
   // .header__search-input
   &__search-input {
     position: absolute;
