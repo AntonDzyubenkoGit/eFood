@@ -90,7 +90,7 @@ function totalPrice() {
   }
 
   const cartTotal = document.querySelector(".cart-total");
-  return (cartTotal.innerHTML = `Total price: $${total}.00`);
+  cartTotal.innerHTML = `Total price: $${total}.00`;
 }
 
 // Функция для удаления товаров из корзины
